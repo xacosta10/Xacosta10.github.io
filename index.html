@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xiara Acosta | Instructional Design Portfolio</title>
+<meta name="description" content="Instructional design portfolio of Xiara Acosta: interactive e-learning, software how-to videos, workshops, and learner guides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #1C2331;
+    --muted: #5A6170;
+    --green: #2F6B5E;
+    --gold: #A67C1F;
+    --rule: #DADDD6;
+    --tag: #EEF3F0;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.hero { padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--rule); }
+  .hero h1 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+  .hero .role { font-size: 1.15rem; color: var(--green); font-weight: 600; margin: 0 0 1.25rem; }
+  .hero p.intro { max-width: 40rem; margin: 0 0 1.75rem; color: var(--ink); }
+  .contact { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; padding: 0; margin: 0; list-style: none; }
+  .contact a { color: var(--ink); font-weight: 600; text-decoration-color: var(--gold); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+
+  nav.jump { padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
+  nav.jump ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.95rem; }
+  nav.jump a { color: var(--muted); text-decoration: none; }
+  nav.jump a:hover { color: var(--green); text-decoration: underline; }
+
+  section.group { padding: 3rem 0 1rem; }
+  section.group > h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 0 0 0.35rem;
+  }
+  section.group > p.lede { color: var(--muted); margin: 0 0 1.5rem; max-width: 42rem; }
+
+  /* Each project reads like a catalog record: format on the left, work on the right */
+  article.record {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 0.5rem 2rem;
+    padding: 1.75rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .record .format { font-size: 0.9rem; color: var(--gold); font-weight: 600; line-height: 1.4; }
+  .record .format span { display: block; color: var(--muted); font-weight: 400; }
+  .record h3 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+  }
+  .record p { margin: 0 0 0.85rem; max-width: 42rem; }
+  .skills { list-style: none; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .skills li { background: var(--tag); color: var(--green); font-size: 0.82rem; padding: 0.2rem 0.6rem; border-radius: 3px; }
+  a.view {
+    display: inline-block;
+    color: var(--paper);
+    background: var(--green);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+  a.view:hover { background: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  .note { background: var(--tag); border-left: 4px solid var(--green); padding: 1rem 1.25rem; margin: 2.5rem 0 0; max-width: 46rem; }
+  .note p { margin: 0; }
+
+  footer { margin-top: 3rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+  footer a { color: var(--ink); }
+
+  @media (max-width: 640px) {
+    header.hero { padding-top: 3rem; }
+    article.record { grid-template-columns: 1fr; gap: 0.35rem; }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #151A22; --ink: #E9EBEF; --muted: #A5ACB8; --green: #7CC2AF;
+      --gold: #D9B35C; --rule: #2C3440; --tag: #1F2A2A;
+    }
+    :root:not([data-theme="light"]) a.view { color: #151A22; }
+    :root:not([data-theme="light"]) a.view:hover { background: #E9EBEF; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Xiara Acosta</h1>
+    <p class="role">Instructional design, e-learning, and training</p>
+    <p class="intro">I design self-paced tutorials, software how-to videos, workshops, and learner guides that make complex tools and research skills easy to learn. For more than 13 years at Nova Southeastern University, I have taught students, faculty, and community learners in person, online, and in hybrid formats. I am completing an M.S. in Data Analytics and Artificial Intelligence (December 2026).</p>
+    <ul class="contact">
+      <li><a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></li>
+    </ul>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Portfolio sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#elearning">Interactive e-learning</a></li>
+      <li><a href="#videos">Software how-to videos</a></li>
+      <li><a href="#workshops">Workshops and presentations</a></li>
+      <li><a href="#guides">Learner guides</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="group" id="elearning">
+    <h2>Interactive e-learning</h2>
+    <p class="lede">Self-paced modules I designed and built in HTML, CSS, and JavaScript.</p>
+
+    <article class="record">
+      <div class="format">Self-paced tutorial<span>COMP 1500 course</span></div>
+      <div>
+        <h3>Evaluate Sources with CARDIO</h3>
+        <p>A self-paced tutorial that teaches computing students to judge whether a source is credible, using the six CARDIO criteria: Currency, Authority, Relevance, Documentation, Information Type, and Objectivity. Learners work through one criterion at a time using a real practice article, answer guided reflection prompts, and complete a knowledge check before they can move on.</p>
+        <p>The module opens with visual primers on the information cycle and peer review, embeds a video on lateral reading, and ends by sending learners to the required course quiz, so the practice and the graded assessment stay aligned.</p>
+        <ul class="skills">
+          <li>Learning objectives</li><li>Knowledge checks</li><li>Scaffolded practice</li><li>Assessment alignment</li><li>HTML/CSS/JS</li>
+        </ul>
+        <a class="view" href="https://xacosta10.github.io/CARDIO/">Open the CARDIO tutorial</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Interactive tool<span>Guided job aid</span></div>
+      <div>
+        <h3>Database Keyword Search Builder</h3>
+        <p>A six-step guided tool that turns a vague research idea into a working database search. Learners define their topic (What), angle (Why), and population (Who), see those pieces combine into a research question, add synonyms, and receive ready-to-paste search strings formatted for both multi-box databases and single-box search engines.</p>
+        <p>It breaks a technical skill that often overwhelms beginners into small, confident steps and gives learners something they can use immediately.</p>
+        <ul class="skills">
+          <li>Task analysis</li><li>Step-by-step scaffolding</li><li>Performance support</li><li>Plain-language design</li><li>HTML/CSS/JS</li>
+        </ul>
+        <a class="view" href="https://xacosta10.github.io/asl-database-search-builder/">Open the Search Builder</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="group" id="videos">
+    <h2>Software how-to videos</h2>
+    <p class="lede">Short, task-focused screencasts for students and the public. I script, record, edit, and caption them.</p>
+
+    <article class="record">
+      <div class="format">Screencast<span>2026 update</span></div>
+      <div>
+        <h3>How to Use Advanced Search in the Catalog</h3>
+        <p>Shows learners how to use filters in the library catalog to find books, ebooks, video games, and DVDs more efficiently. Published with a script and closed captions.</p>
+        <ul class="skills"><li>Scriptwriting</li><li>Screen recording</li><li>Captioning</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/11/">Watch the video</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Screencast<span>2026</span></div>
+      <div>
+        <h3>How to Reserve a Study Room</h3>
+        <p>A step-by-step walkthrough of the online room reservation system. Published with closed captions and a full transcript.</p>
+        <ul class="skills"><li>Process walkthrough</li><li>Captioning</li><li>Transcript</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/133/">Watch the video</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Screencast<span>Co-created, 2026 update</span></div>
+      <div>
+        <h3>How to Search for Articles</h3>
+        <p>Demonstrates how to search library databases for scholarly articles using keywords, then apply filters to refine results. Published with a script and closed captions.</p>
+        <ul class="skills"><li>Software training</li><li>Scriptwriting</li><li>Captioning</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/49/">Watch the video</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="group" id="workshops">
+    <h2>Workshops and presentations</h2>
+    <p class="lede">Recorded sessions on AI, data, and research tools, designed for students, faculty, and administrators.</p>
+
+    <article class="record">
+      <div class="format">Workshop<span>Fall 2026</span></div>
+      <div>
+        <h3>The Good, the Bad, and the Ugly of AI</h3>
+        <p>A practical, student-focused workshop on how AI can support studying and research, where it goes wrong, and how to use it responsibly. I designed the full package: facilitator script, slide deck, and a leadership-facing overview. The recording is published with captions and a transcript.</p>
+        <ul class="skills"><li>Workshop design</li><li>AI literacy</li><li>Facilitator materials</li><li>Accessibility</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/135/">Watch the workshop</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Presentation<span>Spring 2026</span></div>
+      <div>
+        <h3>Narrative Data Visualization in Academia &amp; Libraries</h3>
+        <p>Shows how to translate complex research metrics into clear, visual stories that support assessment, reporting, and decision-making for administrative and external audiences. Published with closed captions.</p>
+        <ul class="skills"><li>Data storytelling</li><li>Technical to non-technical translation</li><li>Captioning</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/129/">Watch the presentation</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Workshop<span>Co-presented, Fall 2025</span></div>
+      <div>
+        <h3>AI Assistants in Research Databases</h3>
+        <p>Explores the AI research assistants built into Web of Science and ProQuest, and how they can speed up literature reviews while keeping the researcher in control. Published with closed captions and audio.</p>
+        <ul class="skills"><li>Software training</li><li>AI tools</li><li>Faculty audience</li></ul>
+        <a class="view" href="https://nsuworks.nova.edu/library_learn_all/116/">Watch the workshop</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="group" id="guides">
+    <h2>Learner guides</h2>
+    <p class="lede">Multi-page reference guides that learners return to on their own.</p>
+
+    <article class="record">
+      <div class="format">Software guide<span>Multi-page</span></div>
+      <div>
+        <h3>Basic Look at Video Editing</h3>
+        <p>A beginner's guide to iMovie and Adobe Premiere Rush, organized by task: creating and exporting projects, working with audio, and using editing tools. It also covers copyright basics, citing media, and where to find free-to-use images, video, and music.</p>
+        <ul class="skills"><li>Software training</li><li>Information architecture</li><li>Job aids</li></ul>
+        <a class="view" href="https://libguides.nova.edu/videoedit">Open the guide</a>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Subject guide<span>Faculty and students</span></div>
+      <div>
+        <h3>College of Computing, AI, and Cybersecurity</h3>
+        <p>The resource hub I maintain as liaison to NSU's College of Computing, AI, and Cybersecurity. It brings together databases, statistical software access, LinkedIn Learning, journals, ebooks, and library services for students and faculty.</p>
+        <ul class="skills"><li>SME collaboration</li><li>Content curation</li><li>Ongoing maintenance</li></ul>
+        <a class="view" href="https://libguides.nova.edu/ccac">Open the guide</a>
+      </div>
+    </article>
+  </section>
+
+  <div class="note">
+    <p>Accessibility is built into my process: every video here is published with closed captions, and most include a script or transcript.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Xiara Acosta, South Florida. Open to remote roles. <a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
