@@ -97,6 +97,17 @@
   .note { background: var(--tag); border-left: 4px solid var(--green); padding: 1rem 1.25rem; margin: 2.5rem 0 0; max-width: 46rem; }
   .note p { margin: 0; }
 
+
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 1.25rem; max-width: 42rem; }
+  .gallery figure { margin: 0; }
+  .gallery a.shot { display: block; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; height: 20rem; background: #fff; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .gallery figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  a.view.secondary { background: transparent; color: var(--green); border: 2px solid var(--green); padding: 0.4rem 0.9rem; }
+  a.view.secondary:hover { background: var(--tag); }
+  @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } .gallery a.shot { height: 16rem; } }
+
   footer { margin-top: 3rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
   footer a { color: var(--ink); }
 
@@ -129,6 +140,7 @@
 <nav class="jump" aria-label="Portfolio sections">
   <div class="wrap">
     <ul>
+      <li><a href="#canvas">Canvas course design</a></li>
       <li><a href="#elearning">Interactive e-learning</a></li>
       <li><a href="#videos">Software how-to videos</a></li>
       <li><a href="#workshops">Workshops and presentations</a></li>
@@ -138,6 +150,37 @@
 </nav>
 
 <main class="wrap">
+
+  <section class="group" id="canvas">
+    <h2>Canvas course design</h2>
+    <p class="lede">A full self-paced course built in Canvas LMS for faculty professional development.</p>
+
+    <article class="record">
+      <div class="format">Canvas course<span>In development, launching January 2027</span></div>
+      <div>
+        <h3>Learning SciVal: Faculty Development in Canvas</h3>
+        <p>Learning SciVal is a self-paced Canvas course designed to help Nova Southeastern University faculty explore research activity, interpret scholarly metrics, and communicate research impact. Its six-module framework covers platform navigation, research metrics, institutional analysis, researcher profiles and groups, reporting, and responsible use of SciVal.</p>
+        <p>My work focuses on adapting Elsevier&rsquo;s SciVal training resources for NSU faculty through a revised course outline, customized homepage, university branding, and practical learning goals. The course pairs instructional content with practice activities, discussions, knowledge checks, and quizzes to support application.</p>
+        <p>The design emphasizes clear navigation, flexible participation, and connections to faculty research needs, including examining collaboration patterns and preparing research summaries. It also encourages learners to interpret metrics in context and alongside professional judgment.</p>
+        <div class="gallery">
+          <figure>
+            <a class="shot" href="scival-homepage.jpg"><img src="scival-homepage.jpg" alt="Canvas course homepage for Learning SciVal with an NSU-branded banner, a welcome message, six learning goals, time estimate, and linked module descriptions."></a>
+            <figcaption>Custom course homepage. Tap to view full size.</figcaption>
+          </figure>
+          <figure>
+            <a class="shot" href="scival-modules.jpg"><img src="scival-modules.jpg" alt="Canvas modules page showing a course introduction with a baseline survey, then sequenced modules with lessons, a knowledge check after each lesson, discussions, module quizzes, and prerequisites."></a>
+            <figcaption>Module structure with prerequisites and knowledge checks. Tap to view full size.</figcaption>
+          </figure>
+        </div>
+        <ul class="skills">
+          <li>Canvas LMS</li><li>Course outline and learning objectives</li><li>Module sequencing and prerequisites</li><li>Knowledge checks and quizzes</li><li>Faculty audience</li><li>Adapting vendor content</li>
+        </ul>
+        <div class="actions">
+          <a class="view" href="scival-course-outline.pdf">View the course outline (PDF)</a>
+        </div>
+      </div>
+    </article>
+  </section>
 
   <section class="group" id="elearning">
     <h2>Interactive e-learning</h2>
