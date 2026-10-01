@@ -47,6 +47,14 @@
   .contact { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; padding: 0; margin: 0; list-style: none; }
   .contact a { color: var(--ink); font-weight: 600; text-decoration-color: var(--gold); text-underline-offset: 4px; text-decoration-thickness: 2px; }
 
+
+  .hero-grid { display: grid; grid-template-columns: 1fr 15rem; gap: 3rem; align-items: center; }
+  .portrait { width: 15rem; height: 15rem; border-radius: 50%; object-fit: cover; object-position: center 30%; border: 4px solid var(--paper); box-shadow: 0 0 0 1px var(--rule), 0 12px 28px rgba(28,35,49,0.12); }
+  @media (max-width: 760px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .portrait { order: -1; width: 8.5rem; height: 8.5rem; }
+  }
+
   nav.jump { padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
   nav.jump ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.95rem; }
   nav.jump a { color: var(--muted); text-decoration: none; }
@@ -127,13 +135,16 @@
 </head>
 <body>
 <header class="hero">
-  <div class="wrap">
-    <h1>Xiara Acosta</h1>
-    <p class="role">Instructional design, e-learning, and training</p>
-    <p class="intro">I design self-paced tutorials, software how-to videos, workshops, and learner guides that make complex tools and research skills easy to learn. For more than 13 years at Nova Southeastern University, I have taught students, faculty, and community learners in person, online, and in hybrid formats. I have a B.A. in English with a concentration in British Literature, and a minor in Film & Video from Florida Atlantic University. I have a M.S. in Information from Florida State University, and I am completing an M.S. in Data Analytics and Artificial Intelligence (December 2026).</p>
-    <ul class="contact">
-      <li><a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></li>
-    </ul>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Xiara Acosta</h1>
+      <p class="role">Instructional design, e-learning, and training</p>
+      <p class="intro">I design self-paced tutorials, software how-to videos, workshops, and learner guides that make complex tools and research skills easy to learn. For more than 13 years at Nova Southeastern University, I have taught students, faculty, and community learners in person, online, and in hybrid formats. I am completing an M.S. in Data Analytics and Artificial Intelligence (December 2026).</p>
+      <ul class="contact">
+        <li><a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></li>
+      </ul>
+    </div>
+    <img class="portrait" src="profile.jpg" alt="Portrait of Xiara Acosta" width="640" height="640">
   </div>
 </header>
 
