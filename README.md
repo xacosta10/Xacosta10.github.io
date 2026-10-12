@@ -33,7 +33,7 @@ Short, captioned screencasts that I script, record, and edit:
 - [College of Computing, AI, and Cybersecurity](https://libguides.nova.edu/ccac), the subject guide I maintain as library liaison
 
 ### Visual and print design
-- **Library of Things: Collectible Bookmark Campaign.** Six numbered, illustrated bookmarks that use light gamification to promote borrowable items and send patrons to three library service points to complete the set.
+- **Library of Things: Collectible Bookmark Campaign.** Six numbered bookmarks, illustrated with AI image tools under my creative direction, that use light gamification to promote borrowable items and send patrons to three library service points to complete the set.
 - **Online Resources Bookmark.** A two-sided print job aid introducing the library's digital reading and learning collections.
 
 ## Certifications
