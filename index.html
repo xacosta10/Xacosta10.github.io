@@ -131,6 +131,22 @@
   a.view.secondary:hover { background: var(--tag); }
   @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } .gallery a.shot { height: 16rem; } }
 
+  .gallery.single { grid-template-columns: minmax(0, 18rem); }
+  .gallery.single a.shot { height: auto; }
+  .gallery.single img { height: auto; }
+  .record h4 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+  .bookmarks { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.75rem; max-width: 42rem; margin: 0.5rem 0 0.4rem; }
+  .bookmarks.pair { grid-template-columns: repeat(2, minmax(0, 7.5rem)); }
+  .bookmarks figure { margin: 0; }
+  .bookmarks a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px var(--rule), 0 6px 14px rgba(28,35,49,0.08); background: #fff; }
+  .bookmarks img { width: 100%; height: auto; display: block; }
+  .bookmarks figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.3; }
+  .figcap { font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem; max-width: 42rem; }
+  table.dist { border-collapse: collapse; width: 100%; max-width: 42rem; font-size: 0.92rem; margin: 0.25rem 0 1rem; }
+  table.dist th, table.dist td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+  table.dist th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  @media (max-width: 640px) { .bookmarks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
   footer { margin-top: 3rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
   footer a { color: var(--ink); }
 
@@ -171,6 +187,7 @@
       <li><a href="#videos">Software how-to videos</a></li>
       <li><a href="#workshops">Workshops and presentations</a></li>
       <li><a href="#guides">Learner guides</a></li>
+      <li><a href="#design">Visual and print design</a></li>
       <li><a href="#certifications">Certifications</a></li>
     </ul>
   </div>
@@ -277,7 +294,7 @@
 
   <section class="group" id="workshops">
     <h2>Workshops and presentations</h2>
-    <p class="lede">Recorded sessions on AI, data, and research tools, designed for students, faculty, and administrators.</p>
+    <p class="lede">Live and recorded sessions and programs on AI, data, research tools, and language learning, for students, faculty, and community learners.</p>
 
     <article class="record">
       <div class="format">Workshop<span>Fall 2026</span></div>
@@ -308,6 +325,31 @@
         <a class="view" href="https://nsuworks.nova.edu/library_learn_all/116/">Watch the workshop</a>
       </div>
     </article>
+
+    <article class="record">
+      <div class="format">Learning program<span>Launched October 2024</span></div>
+      <div>
+        <h3>English Caf&eacute;</h3>
+        <p>A free, recurring program I created for adult speakers of other languages to practice reading, writing, and conversation in English in a relaxed, welcoming setting. The program met on the first and third Monday of each month at the Alvin Sherman Library, and I created new materials for every session.</p>
+        <p>To strengthen the curriculum, I worked with Broward County Library staff on its structure and on recommended resources, a natural fit with my <a href="#certifications">TEFL training</a>.</p>
+        <div class="gallery single">
+          <figure>
+            <a class="shot" href="english-cafe-flyer.jpg"><img src="english-cafe-flyer.jpg" alt="English Caf&eacute; flyer: starting October 2024, practice reading, writing, and conversational skills for speakers of other languages, first and third Monday of every month, 6 to 7 p.m., second floor, room 2053, Alvin Sherman Library."></a>
+            <figcaption>Program flyer. Tap to view full size.</figcaption>
+          </figure>
+        </div>
+        <ul class="skills"><li>Program design</li><li>Adult learners</li><li>Language learning</li><li>Curriculum development</li></ul>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Online workshops<span>Liaison instruction</span></div>
+      <div>
+        <h3>Online Library Workshops for the College of Computing and Engineering</h3>
+        <p>Two live online workshops I delivered as library liaison to NSU&rsquo;s College of Computing and Engineering (now the College of Computing, AI, and Cybersecurity). <em>Introduction to the Library</em> oriented students to the library&rsquo;s resources and services, and <em>Accessing Dissertations</em> showed them how to find and access dissertations for their own research.</p>
+        <ul class="skills"><li>Online instruction</li><li>Liaison partnership</li><li>Research skills</li></ul>
+      </div>
+    </article>
   </section>
 
   <section class="group" id="guides">
@@ -315,11 +357,12 @@
     <p class="lede">Multi-page reference guides that learners return to on their own.</p>
 
     <article class="record">
-      <div class="format">Software guide<span>Multi-page</span></div>
+      <div class="format">Guide and workshop<span>Multi-page guide, live demos</span></div>
       <div>
         <h3>Basic Look at Video Editing</h3>
-        <p>A beginner's guide to iMovie and Adobe Premiere Rush, organized by task: creating and exporting projects, working with audio, and using editing tools. It also covers copyright basics, citing media, and where to find free-to-use images, video, and music.</p>
-        <ul class="skills"><li>Software training</li><li>Information architecture</li><li>Job aids</li></ul>
+        <p>I first built this guide when a faculty member asked for help supporting a video project in her class. It grew into a hands-on workshop I deliver to her students each semester, where I walk through the guide and demonstrate iMovie and Adobe Premiere Rush. I have also given video editing demonstrations for a COMP 1500 class and during a THEA 1500 tour of the Digital Media Lab and Makerspace.</p>
+        <p>The guide itself is a beginner's guide to iMovie and Adobe Premiere Rush, organized by task: creating and exporting projects, working with audio, and using editing tools. It also covers copyright basics, citing media, and where to find free-to-use images, video, and music.</p>
+        <ul class="skills"><li>Needs analysis</li><li>Software training</li><li>Live demonstration</li><li>Job aids</li></ul>
         <a class="view" href="https://libguides.nova.edu/videoedit">Open the guide</a>
       </div>
     </article>
@@ -331,6 +374,94 @@
         <p>The resource hub I maintain as liaison to NSU's College of Computing, AI, and Cybersecurity. It brings together databases, statistical software access, LinkedIn Learning, journals, ebooks, and library services for students and faculty.</p>
         <ul class="skills"><li>SME collaboration</li><li>Content curation</li><li>Ongoing maintenance</li></ul>
         <a class="view" href="https://libguides.nova.edu/ccac">Open the guide</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="group" id="design">
+    <h2>Visual and print design</h2>
+    <p class="lede">Print pieces that help people discover library resources and keep learning after a session ends.</p>
+
+    <article class="record">
+      <div class="format">Outreach campaign<span>Featured project, 2026</span></div>
+      <div>
+        <h3>Library of Things: Collectible Bookmark Campaign</h3>
+        <p>Most people think of an academic library as books, databases, and study space. To show students and visitors everything else they can borrow, I created a series of six collectible bookmarks for the Alvin Sherman Library&rsquo;s Library of Things, each featuring a different item, from power banks and graphing calculators to science models and an office supply kit.</p>
+
+        <h4>The concept</h4>
+        <p>Instead of a standard informational handout, I borrowed ideas from trading cards and sticker collections. Each bookmark is numbered, No. 1 through 6, and gives its item playful &ldquo;stats&rdquo; and a &ldquo;special ability,&rdquo; so the set feels like something worth keeping and completing. The back of every bookmark carries the practical message: what the Library of Things offers and where to explore the collection.</p>
+
+        <h4>Design process</h4>
+        <p>I set the creative direction for a soft, storybook-style look: pastel colors, rounded characters, simple backgrounds, NSU branding, and a recurring shark plushie mascot. The original Power Bank artwork became the reference for the whole series. When later concepts drifted toward a more realistic or anime-like style, I brought them back to that original direction, choosing consistency over complexity and recognizability over realism.</p>
+
+        <div class="bookmarks">
+          <figure>
+            <a href="lot-bookmark-1.jpg"><img src="lot-bookmark-1.jpg" alt="Bookmark No. 1, Power Bank: storybook-style illustration of a student walking past the Alvin Sherman Library charging her phone from a pink power bank, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 1<br>Power Bank</figcaption>
+          </figure>
+          <figure>
+            <a href="lot-bookmark-2.jpg"><img src="lot-bookmark-2.jpg" alt="Bookmark No. 2, Graphing Calculator: storybook-style illustration of a student solving math problems at a desk with a graphing calculator, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 2<br>Graphing Calculator</figcaption>
+          </figure>
+          <figure>
+            <a href="lot-bookmark-3.jpg"><img src="lot-bookmark-3.jpg" alt="Bookmark No. 3, Wired Earbuds: storybook-style illustration of a student studying in the library while listening through wired earbuds, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 3<br>Wired Earbuds</figcaption>
+          </figure>
+          <figure>
+            <a href="lot-bookmark-4.jpg"><img src="lot-bookmark-4.jpg" alt="Bookmark No. 4, Whiteboards: storybook-style illustration of two students planning their studying on a small whiteboard, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 4<br>Whiteboards</figcaption>
+          </figure>
+          <figure>
+            <a href="lot-bookmark-5.jpg"><img src="lot-bookmark-5.jpg" alt="Bookmark No. 5, Scientific Models &amp; Kits: storybook-style illustration of two students exploring a cell model kit together, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 5<br>Scientific Models &amp; Kits</figcaption>
+          </figure>
+          <figure>
+            <a href="lot-bookmark-6.jpg"><img src="lot-bookmark-6.jpg" alt="Bookmark No. 6, Office Supply Kit: storybook-style illustration of a student checking out an office supply kit at the circulation desk, with item stats, a special ability, and the link lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>No. 6<br>Office Supply Kit</figcaption>
+          </figure>
+        </div>
+        <p class="figcap">The full collection. Tap any bookmark to view it full size.</p>
+
+        <h4>Getting students to explore</h4>
+        <p>Rather than stacking all six designs at one desk, I split them across three service points, two per desk, so collecting the full set means visiting different parts of the library and meeting the staff there.</p>
+        <table class="dist">
+          <thead><tr><th scope="col">Service point</th><th scope="col">Bookmarks</th></tr></thead>
+          <tbody>
+            <tr><td>Public Computing Services</td><td>No. 1 Power Bank, No. 6 Office Supply Kit</td></tr>
+            <tr><td>Circulation</td><td>No. 2 Graphing Calculator, No. 4 Whiteboards</td></tr>
+            <tr><td>Adult Reference Services</td><td>No. 3 Wired Earbuds, No. 5 Scientific Models &amp; Kits</td></tr>
+          </tbody>
+        </table>
+        <p>I also planned the physical display at the Adult Reference Services suite entrance and coordinated with staff to keep the bookmarks organized and available.</p>
+
+        <div class="bookmarks pair">
+          <figure>
+            <a href="lot-bookmark-back.jpg"><img src="lot-bookmark-back.jpg" alt="Back of the bookmarks: Forgot your charger, calculator, headphones, poncho, or study supplies? The Library of Things has your back. Explore the collection at lib.nova.edu/lot." loading="lazy"></a>
+            <figcaption>Shared back, color-matched to each front</figcaption>
+          </figure>
+        </div>
+
+        <ul class="skills"><li>Creative direction</li><li>Design iteration</li><li>Gamification</li><li>User-centered design</li><li>Visual branding</li><li>Distribution planning</li></ul>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Print job aid<span>Two-sided bookmark</span></div>
+      <div>
+        <h3>Online Resources Bookmark</h3>
+        <p>A two-sided bookmark that introduces the library&rsquo;s digital collections. The <em>Read Online</em> side covers cloudLibrary, Comics Plus, and Flipster, with app store badges so readers can download the apps right away. The <em>Learn Online</em> side covers LinkedIn Learning and LearningExpress Library and points to lib.nova.edu/online.</p>
+        <p>I designed it as a take-away for library instruction sessions and the reference desks, giving each resource a one-line, plain-language description so learners know what it is for at a glance.</p>
+        <div class="bookmarks pair">
+          <figure>
+            <a href="online-bookmark-front.jpg"><img src="online-bookmark-front.jpg" alt="Read Online side: cloudLibrary for eBooks and eAudiobooks, Comics Plus for digital comics, graphic novels, and manga, and Flipster for digital magazines, with App Store and Google Play badges." loading="lazy"></a>
+            <figcaption>Read Online</figcaption>
+          </figure>
+          <figure>
+            <a href="online-bookmark-back.jpg"><img src="online-bookmark-back.jpg" alt="Learn Online side: LinkedIn Learning for expert-led online courses and video tutorials, and LearningExpress Library for practice tests, quizzes, tutorials, and flashcards, with the link lib.nova.edu/online." loading="lazy"></a>
+            <figcaption>Learn Online</figcaption>
+          </figure>
+        </div>
+        <ul class="skills"><li>Job aid design</li><li>Plain-language writing</li><li>Visual hierarchy</li><li>Print design</li></ul>
       </div>
     </article>
   </section>

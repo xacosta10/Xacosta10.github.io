@@ -25,10 +25,16 @@ Short, captioned screencasts that I script, record, and edit:
 - [The Good, the Bad, and the Ugly of AI](https://nsuworks.nova.edu/library_learn_all/135/), a student AI literacy workshop
 - [Narrative Data Visualization in Academia & Libraries](https://nsuworks.nova.edu/library_learn_all/129/)
 - [AI Assistants in Research Databases](https://nsuworks.nova.edu/library_learn_all/116/) (co-presented)
+- **English Café**, a recurring conversation program I created for adult speakers of other languages
+- **Online library workshops** for the College of Computing and Engineering: Introduction to the Library and Accessing Dissertations
 
 ### Learner guides
-- [Basic Look at Video Editing](https://libguides.nova.edu/videoedit), a beginner's guide to iMovie and Adobe Premiere Rush
+- [Basic Look at Video Editing](https://libguides.nova.edu/videoedit), a beginner's guide to iMovie and Adobe Premiere Rush that grew into a recurring class workshop
 - [College of Computing, AI, and Cybersecurity](https://libguides.nova.edu/ccac), the subject guide I maintain as library liaison
+
+### Visual and print design
+- **Library of Things: Collectible Bookmark Campaign.** Six numbered, illustrated bookmarks that use light gamification to promote borrowable items and send patrons to three library service points to complete the set.
+- **Online Resources Bookmark.** A two-sided print job aid introducing the library's digital reading and learning collections.
 
 ## Certifications
 - **TestOut Security Pro**, CompTIA, October 2026 ([verify](https://certification.platform.comptia.org/verifycert/6-3C6-HVN9P))
