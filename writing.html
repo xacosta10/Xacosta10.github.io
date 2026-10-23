@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Writing Samples | Xiara Acosta</title>
+<meta name="description" content="Writing samples by Xiara Acosta.">
+<link rel="apple-touch-icon" href="profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAFAF7;
+    --ink: #1C2331;
+    --muted: #5A6170;
+    --green: #2F6B5E;
+    --gold: #A67C1F;
+    --rule: #DADDD6;
+    --tag: #EEF3F0;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.hero { padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--rule); }
+  .hero h1 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+  .hero .role { font-size: 1.15rem; color: var(--green); font-weight: 600; margin: 0 0 1.25rem; }
+  .hero p.intro { max-width: 40rem; margin: 0 0 1.75rem; color: var(--ink); }
+  .contact { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; padding: 0; margin: 0; list-style: none; }
+  .contact a { color: var(--ink); font-weight: 600; text-decoration-color: var(--gold); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+
+
+  .hero-grid { display: grid; grid-template-columns: 1fr 15rem; gap: 3rem; align-items: center; }
+  .portrait { width: 15rem; height: 15rem; border-radius: 50%; object-fit: cover; object-position: center 30%; border: 4px solid var(--paper); box-shadow: 0 0 0 1px var(--rule), 0 12px 28px rgba(28,35,49,0.12); }
+  @media (max-width: 760px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .portrait { order: -1; width: 8.5rem; height: 8.5rem; }
+  }
+
+  nav.jump { padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
+  nav.jump ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.95rem; }
+  nav.jump a { color: var(--muted); text-decoration: none; }
+  nav.jump a:hover { color: var(--green); text-decoration: underline; }
+
+  section.group { padding: 3rem 0 1rem; }
+  section.group > h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 0 0 0.35rem;
+  }
+  section.group > p.lede { color: var(--muted); margin: 0 0 1.5rem; max-width: 42rem; }
+
+  /* Each project reads like a catalog record: format on the left, work on the right */
+  article.record {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 0.5rem 2rem;
+    padding: 1.75rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .record .format { font-size: 0.9rem; color: var(--gold); font-weight: 600; line-height: 1.4; }
+  .record .format span { display: block; color: var(--muted); font-weight: 400; }
+  .record h3 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+  }
+  .record p { margin: 0 0 0.85rem; max-width: 42rem; }
+  .record p a { color: var(--green); font-weight: 600; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+  .skills { list-style: none; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .skills li { background: var(--tag); color: var(--green); font-size: 0.82rem; padding: 0.2rem 0.6rem; border-radius: 3px; }
+  a.view {
+    display: inline-block;
+    color: var(--paper);
+    background: var(--green);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+  a.view:hover { background: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  .note { background: var(--tag); border-left: 4px solid var(--green); padding: 1rem 1.25rem; margin: 2.5rem 0 0; max-width: 46rem; }
+  .note p { margin: 0; }
+
+
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 1.25rem; max-width: 42rem; }
+  .gallery figure { margin: 0; }
+  .gallery a.shot { display: block; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; height: 20rem; background: #fff; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .gallery figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  a.view.secondary { background: transparent; color: var(--green); border: 2px solid var(--green); padding: 0.4rem 0.9rem; }
+  a.view.secondary:hover { background: var(--tag); }
+  @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } .gallery a.shot { height: 16rem; } }
+
+  .gallery.single { grid-template-columns: minmax(0, 18rem); }
+  .gallery.single a.shot { height: auto; }
+  .gallery.single img { height: auto; }
+  .record h4 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+  .bookmarks { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.75rem; max-width: 42rem; margin: 0.5rem 0 0.4rem; }
+  .bookmarks.pair { grid-template-columns: repeat(2, minmax(0, 7.5rem)); }
+  .bookmarks figure { margin: 0; }
+  .bookmarks a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px var(--rule), 0 6px 14px rgba(28,35,49,0.08); background: #fff; }
+  .bookmarks img { width: 100%; height: auto; display: block; }
+  .bookmarks figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.3; }
+  .figcap { font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem; max-width: 42rem; }
+  table.dist { border-collapse: collapse; width: 100%; max-width: 42rem; font-size: 0.92rem; margin: 0.25rem 0 1rem; }
+  table.dist th, table.dist td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+  table.dist th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  @media (max-width: 640px) { .bookmarks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+  footer { margin-top: 3rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+  footer a { color: var(--ink); }
+
+  @media (max-width: 640px) {
+    header.hero { padding-top: 3rem; }
+    article.record { grid-template-columns: 1fr; gap: 0.35rem; }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #151A22; --ink: #E9EBEF; --muted: #A5ACB8; --green: #7CC2AF;
+      --gold: #D9B35C; --rule: #2C3440; --tag: #1F2A2A;
+    }
+    :root:not([data-theme="light"]) a.view { color: #151A22; }
+    :root:not([data-theme="light"]) a.view:hover { background: #E9EBEF; }
+  }
+
+  .sample { font-family: "Newsreader", Georgia, serif; font-size: 1.2rem; line-height: 1.6; max-width: 40rem; }
+  .sample p { margin: 0 0 1rem; }
+  .lines { list-style: none; margin: 0; padding: 0; max-width: 40rem; }
+  .lines li { font-family: "Newsreader", Georgia, serif; font-size: 1.2rem; line-height: 1.45; padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
+  .lines li:last-child { border-bottom: 0; }
+  .sample h4 { font-family: "Public Sans", sans-serif; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); margin: 1.75rem 0 0.5rem; }
+  .sample h4:first-child { margin-top: 0; }
+  .back { display: inline-block; margin-bottom: 1.5rem; color: var(--muted); font-size: 0.95rem; text-decoration: none; }
+  .back:hover { color: var(--green); text-decoration: underline; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <a class="back" href="/">&larr; Xiara Acosta Portfolio</a>
+    <h1>Writing Samples</h1>
+    <p class="role">Astrology and short-form writing</p>
+    <p class="intro">A collection of short horoscopes, transit and compatibility readings, a reading of my own chart, and a personal essay. I write about the uncomfortable parts of being a person as plainly and as kindly as I can.</p>
+    <ul class="contact">
+      <li><a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="group">
+
+    <article class="record">
+      <div class="format">Daily lines<span>Push-notification horoscopes</span></div>
+      <div>
+        <ul class="lines">
+          <li>Pay attention to who notices when you go quiet.</li>
+          <li>You don't have to earn tenderness. You just have to stop flinching when it arrives.</li>
+          <li>Falling is easy. Choosing someone on an ordinary Tuesday is the part that lasts.</li>
+          <li>Stop auditioning for people who already gave you the part.</li>
+          <li>Your restlessness isn't a flaw. It's a compass no one has learned to read yet.</li>
+          <li>You can love something that ends. That's the only kind there is.</li>
+          <li>Do the honest thing badly rather than the polite thing well.</li>
+          <li>The wound you keep explaining is asking to be left alone.</li>
+          <li>Not everything that feels like fate is fate. Some of it is just you, choosing again.</li>
+          <li>Being understood is not the same as being agreed with. Today, settle for the first one.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Natal chart reading<span>Sagittarius Sun, Sagittarius Moon, Aquarius rising</span></div>
+      <div class="sample">
+        <p>People meet the Aquarius first. Cool, curious, a little far away, asking questions that sound like interviews. Underneath is a double Sagittarius who would rather be lost in a new city than safe in a familiar one.</p>
+        <p>Your Sun and Moon agree with each other, which is rare. What you want and what you need point the same direction. Outward, forward, toward the truth, even when the truth is rude.</p>
+        <p>Both of them sit in your tenth house, the most public point in the chart. You are built to be seen, at the front of a room, explaining, teaching, arguing for the thing you believe. Your Venus in Capricorn is quieter about it. You don't fall in love. You decide, and then you show up, again and again, until it holds.</p>
+        <p>The trouble is that you process feelings by moving. You turn grief into a road trip, heartbreak into a theory, loneliness into a joke you tell before anyone else can. You are generous with your opinions and stingy with your softest parts.</p>
+        <p>Your chart ruler is Saturn, the planet of limits, and it hides in your twelfth house, the back room where you keep what no one sees. It stands guard over a chart that hates doors. That is the whole tension. You want to be free, and you want someone to know exactly where you are. Both are allowed. Let one person see you standing still.</p>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Transit readings<span>Three transits</span></div>
+      <div class="sample">
+        <h4>Venus Retrograde</h4>
+        <p>Someone from before may text. Before you answer, ask yourself whether you miss them or miss who you were when they were around. Venus retrograde isn't a curse on love. It's an audit. Everything you value gets pulled off the shelf and turned over in the light. The relationship, the friendship you outgrew, the version of beauty you've been chasing. Some of it was never yours. Some of it still is. Don't buy the expensive thing this week. Don't cut your hair because you're sad.</p>
+        <h4>Saturn Conjunct Your Moon</h4>
+        <p>Your feelings get heavy and honest. You may feel older than you are, or lonely in rooms full of people who love you. The comforts you used to reach for stop working, and that is the point. Saturn is asking your emotional life to grow load-bearing walls. This is not punishment. It is construction. Let the old coping crack. Build something that can hold you when no one else is home.</p>
+        <h4>Mars Square Your Venus</h4>
+        <p>What you want and how you go after it are arguing. You might pick a fight just to feel close to someone. You might mistake jealousy for passion, or call a craving a calling. Desire is loud right now, and loud is not the same as accurate. Before you push, ask what you're actually reaching for. Sometimes it's a person. Sometimes it's proof that you can still be wanted.</p>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Compatibility<span>Sagittarius Moon and Scorpio Moon</span></div>
+      <div class="sample">
+        <p>One of you needs to talk about it right now. The other needs to not talk about it until 3 a.m.</p>
+        <p>Scorpio Moon loves by excavating. They want the password, the history, the version of you no one else gets. Sagittarius Moon loves by opening a window. Too much closeness feels like a hand over the mouth.</p>
+        <p>You will hurt each other in predictable ways. Scorpio reads Sagittarius's need for air as a verdict. Sagittarius reads Scorpio's need for depth as surveillance. Both of you are wrong, and both of you are a little bit right.</p>
+        <p>Here's what works. Scorpio, trust that someone who keeps coming back is choosing you, not escaping you. Sagittarius, tell the truth slowly enough that it can land. Depth isn't a cage if you can see the door.</p>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="format">Personal essay<span>Saturn Is Watching</span></div>
+      <div class="sample">
+        <p>In Salvador Plascencia's <em>The People of Paper</em>, a man named Federico de la Fe is sure that Saturn is watching him. He's right. Saturn is the author, hovering over every page, and Federico blames him for everything. The wet sheets, the wife who left, the ache that won't lift. So he builds a house out of lead, the one metal the planet can't see through, and he goes to war with the sky.</p>
+        <p>I read it in college and wrote a paper about breaking the fourth wall. I missed the point. I thought it was a book about authors. It's a book about being looked at.</p>
+        <p>Federico wants privacy from the heavens. One of his soldiers, Smiley, wants the opposite. He would rather something be up there than nothing. He doesn't want to look up and find the sky empty.</p>
+        <p>I think most of us are both of them, depending on the night. We want to be unwatched when we're ashamed and seen when we're lonely. We want a lead roof and an open window.</p>
+        <p>My rising sign is Aquarius, and the old astrologers gave Aquarius to Saturn, the planet of limits, time, and consequence. Which means the planet Federico hid from is the one keeping watch over me. In my chart, it sits in the twelfth house, the house of what stays hidden. My watcher has a lead house of its own. I used to find that grim. Now I find it oddly tender. Saturn is the planet that stays. It comes back on schedule, every twenty-nine and a half years, to ask whether you've become who you said you would.</p>
+        <p>I've worked in a university library for thirteen years. Watching people is the job. You learn that the question someone asks is rarely the question they mean. The student who wants "a source" wants to know if their idea is stupid. The man who needs help with the printer wants someone to talk to. You don't fix their lives. You notice them precisely, and you're kind about it.</p>
+        <p>That's what I want a horoscope to do. Not predict. Notice. Say the true thing plainly enough that someone feels caught, and gently enough that they don't build a lead house to hide from it.</p>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Xiara Acosta, South Florida. <a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
