@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Xiara Acosta Portfolio</title>
-<meta name="description" content="Instructional design portfolio of Xiara Acosta: interactive e-learning, software how-to videos, workshops, and learner guides.">
+<meta name="description" content="Portfolio of Xiara Acosta: LMS administration, Canvas course builds, digital learning assets, captioned video, interactive web tutorials, and repository management.">
 <!-- Link preview (texts, email, social media) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://xiaraacosta.com/">
 <meta property="og:site_name" content="Xiara Acosta Portfolio">
 <meta property="og:title" content="Xiara Acosta Portfolio">
-<meta property="og:description" content="Instructional design, e-learning, and training: interactive tutorials, software how-to videos, workshops, and learner guides.">
+<meta property="og:description" content="LMS administration, course content, and digital learning assets: Canvas course builds, captioned video, interactive web tutorials, and repository collections.">
 <meta property="og:image" content="https://xiaraacosta.com/profile.jpg">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
@@ -147,6 +147,17 @@
   table.dist th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
   @media (max-width: 640px) { .bookmarks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
+  .caps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1rem; }
+  .cap { border: 1px solid var(--rule); border-top: 3px solid var(--gold); border-radius: 4px; padding: 1.1rem 1.25rem 1.2rem; background: var(--paper); }
+  .cap h3 { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 1.2rem; line-height: 1.25; margin: 0 0 0.45rem; }
+  .cap p { margin: 0 0 0.7rem; font-size: 0.97rem; }
+  .cap a { color: var(--green); font-weight: 600; font-size: 0.92rem; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+  .toolgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 2rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+  .toolgrid h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.5rem; }
+  .toolgrid .skills { margin: 0; }
+  .toolgrid + .figcap { margin-top: 1.5rem; }
+  @media (max-width: 640px) { .caps, .toolgrid { grid-template-columns: 1fr; } }
+
   footer { margin-top: 3rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
   footer a { color: var(--ink); }
 
@@ -169,8 +180,8 @@
   <div class="wrap hero-grid">
     <div class="hero-text">
       <h1>Xiara Acosta</h1>
-      <p class="role">Instructional design, e-learning, and training</p>
-      <p class="intro">I design self-paced tutorials, software how-to videos, workshops, and learner guides that make complex tools and research skills easy to learn. For more than 13 years at Nova Southeastern University, I have taught students, faculty, and community learners in person, online, and in hybrid formats. I am completing an M.S. in Data Analytics and Artificial Intelligence (December 2026).</p>
+      <p class="role">LMS administration, course content, and digital learning assets</p>
+      <p class="intro">I build and maintain the online courses, web tutorials, videos, and digital files that learners depend on, and I make sure every piece is accurate, accessible, and easy to find. For more than 13 years at Nova Southeastern University, I have set up Canvas courses, prepared and published media, managed repository collections, and trained students, faculty, and staff. I am completing an M.S. in Data Analytics and Artificial Intelligence (December 2026), where I work with SQL, Python, Tableau, and Git.</p>
       <ul class="contact">
         <li><a href="mailto:xiara.acosta@gmail.com">xiara.acosta@gmail.com</a></li>
       </ul>
@@ -182,12 +193,14 @@
 <nav class="jump" aria-label="Portfolio sections">
   <div class="wrap">
     <ul>
-      <li><a href="#canvas">Canvas course design</a></li>
-      <li><a href="#elearning">Interactive e-learning</a></li>
-      <li><a href="#videos">Software how-to videos</a></li>
-      <li><a href="#workshops">Workshops and presentations</a></li>
+      <li><a href="#canvas">LMS and course builds</a></li>
+      <li><a href="#repository">Digital repository</a></li>
+      <li><a href="#elearning">Web-based learning tools</a></li>
+      <li><a href="#videos">Video and media</a></li>
+      <li><a href="#workshops">Training and workshops</a></li>
       <li><a href="#guides">Learner guides</a></li>
       <li><a href="#design">Visual and print design</a></li>
+      <li><a href="#tools">Tools and skills</a></li>
       <li><a href="#certifications">Certifications</a></li>
     </ul>
   </div>
@@ -195,9 +208,36 @@
 
 <main class="wrap">
 
+  <section class="group" id="strengths" aria-labelledby="strengths-h">
+    <h2 id="strengths-h">What I bring</h2>
+    <p class="lede">The behind-the-scenes work that keeps online learning running smoothly.</p>
+    <div class="caps">
+      <div class="cap">
+        <h3>LMS administration and course builds</h3>
+        <p>Canvas sub-account admin access. I build modules with prerequisites, quizzes, and knowledge checks, configure gradebooks, rubrics, and Outcomes, use New Analytics, and review courses against the syllabus for accuracy.</p>
+        <a href="#canvas">See course builds</a>
+      </div>
+      <div class="cap">
+        <h3>Digital asset preparation</h3>
+        <p>I edit video and images, write captions and transcripts, prepare PDFs and web graphics, and keep files consistently named and organized so they publish and link correctly.</p>
+        <a href="#videos">See video and media</a>
+      </div>
+      <div class="cap">
+        <h3>Repository and content management</h3>
+        <p>I upload and manage items in NSUWorks, NSU&rsquo;s Digital Commons repository, set up collections and journals, and help authors submit their work. I also keep subject guides current every semester.</p>
+        <a href="#repository">See repository work</a>
+      </div>
+      <div class="cap">
+        <h3>Web, data, and quality checks</h3>
+        <p>I build pages in HTML, CSS, and basic JavaScript, publish with GitHub Pages, track usage statistics for reports, and work with SQL, Python, Tableau, and Excel. I check alt text, headings, and color contrast on the pages I build and caption every video I publish.</p>
+        <a href="#tools">See tools and skills</a>
+      </div>
+    </div>
+  </section>
+
   <section class="group" id="canvas">
-    <h2>Canvas course design</h2>
-    <p class="lede">A full self-paced course built in Canvas LMS for faculty professional development.</p>
+    <h2>LMS administration and course builds</h2>
+    <p class="lede">Courses I have built, configured, and checked in Canvas LMS.</p>
 
     <article class="record">
       <div class="format">Canvas course<span>In development, launching January 2027</span></div>
@@ -217,18 +257,42 @@
           </figure>
         </div>
         <ul class="skills">
-          <li>Canvas LMS</li><li>Course outline and learning objectives</li><li>Module sequencing and prerequisites</li><li>Knowledge checks and quizzes</li><li>Faculty audience</li><li>Adapting vendor content</li>
+          <li>Canvas course administration</li><li>Module sequencing and prerequisites</li><li>Quizzes and knowledge checks</li><li>Video and image assets</li><li>Adapting vendor content</li><li>Faculty audience</li>
         </ul>
         <div class="actions">
           <a class="view" href="scival-course-outline.pdf">View the course outline (PDF)</a>
         </div>
       </div>
     </article>
+
+    <article class="record">
+      <div class="format">Course build<span>First-year seminar, UNIV 1000</span></div>
+      <div>
+        <h3>UNIV 1000 Course Setup in Canvas</h3>
+        <p>When I taught UNIV 1000, NSU&rsquo;s first-year seminar, I set up the Canvas course myself. I built the course structure, configured the gradebook with assignment groups, weights, grading schemes, and rubrics, and reviewed every assignment and due date against the syllabus so students saw accurate information from the first day.</p>
+        <ul class="skills"><li>Gradebook configuration</li><li>Rubrics</li><li>Course quality review</li><li>Syllabus alignment</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="group" id="repository">
+    <h2>Digital repository</h2>
+    <p class="lede">Publishing and organizing digital content so people can find it and link to it for years.</p>
+
+    <article class="record">
+      <div class="format">Institutional repository<span>bepress Digital Commons</span></div>
+      <div>
+        <h3>NSUWorks</h3>
+        <p>I work in NSUWorks, Nova Southeastern University&rsquo;s institutional repository built on bepress Digital Commons. I upload and manage items, set up new collections and journals, and help faculty and staff authors submit their work, so each item lands in the right collection with its files and description complete.</p>
+        <p>The videos and recorded workshops on this page are published there, which gives each one a stable, shareable link.</p>
+        <ul class="skills"><li>Digital asset management</li><li>Collection and journal setup</li><li>Author support</li><li>Publishing workflows</li></ul>
+      </div>
+    </article>
   </section>
 
   <section class="group" id="elearning">
-    <h2>Interactive e-learning</h2>
-    <p class="lede">Self-paced modules I designed and built in HTML, CSS, and JavaScript.</p>
+    <h2>Web-based learning tools</h2>
+    <p class="lede">Self-paced tools I designed, coded in HTML, CSS, and JavaScript, and publish on GitHub Pages.</p>
 
     <article class="record">
       <div class="format">Self-paced tutorial<span>COMP 1500 course</span></div>
@@ -236,8 +300,9 @@
         <h3>Evaluate Sources with CARDIO</h3>
         <p>A self-paced tutorial that teaches computing students to judge whether a source is credible, using the six CARDIO criteria: Currency, Authority, Relevance, Documentation, Information Type, and Objectivity. Learners work through one criterion at a time using a real practice article, answer guided reflection prompts, and complete a knowledge check before they can move on.</p>
         <p>The module opens with visual primers on the information cycle and peer review, embeds a video on lateral reading, and ends by sending learners to the required course quiz, so the practice and the graded assessment stay aligned.</p>
+        <p>Behind the scenes, the page loads its images as separate files with simple, consistent names. GitHub Pages treats file names as case-sensitive, so a clear naming system keeps every image loading correctly.</p>
         <ul class="skills">
-          <li>Learning objectives</li><li>Knowledge checks</li><li>Scaffolded practice</li><li>Assessment alignment</li><li>HTML/CSS/JS</li>
+          <li>Knowledge checks</li><li>Assessment alignment</li><li>Asset file naming</li><li>GitHub Pages</li><li>HTML/CSS/JS</li>
         </ul>
         <a class="view" href="https://xiaraacosta.com/CARDIO/">Open the CARDIO tutorial</a>
       </div>
@@ -248,9 +313,10 @@
       <div>
         <h3>Database Keyword Search Builder</h3>
         <p>A six-step guided tool that turns a vague research idea into a working database search. Learners define their topic (What), angle (Why), and population (Who), see those pieces combine into a research question, add synonyms, and receive ready-to-paste search strings formatted for both multi-box databases and single-box search engines.</p>
-        <p>It breaks a technical skill that often overwhelms beginners into small, confident steps and gives learners something they can use immediately.</p>
+        <p>It breaks a technical skill that often overwhelms beginners into small, confident steps. Many students arrive without any database instruction and search in full sentences, so I use the tool at the reference desk to reinforce what we teach in class.</p>
+        <p>I built the interactivity in JavaScript: step-by-step navigation, a live summary of the learner&rsquo;s search terms, automatic AND/OR query building, and copy-to-clipboard buttons.</p>
         <ul class="skills">
-          <li>Task analysis</li><li>Step-by-step scaffolding</li><li>Performance support</li><li>Plain-language design</li><li>HTML/CSS/JS</li>
+          <li>JavaScript</li><li>Performance support</li><li>Step-by-step scaffolding</li><li>Plain-language design</li><li>HTML/CSS</li>
         </ul>
         <a class="view" href="https://xiaraacosta.com/asl-database-search-builder/">Open the Search Builder</a>
       </div>
@@ -258,8 +324,8 @@
   </section>
 
   <section class="group" id="videos">
-    <h2>Software how-to videos</h2>
-    <p class="lede">Short, task-focused screencasts for students and the public. I script, record, edit, and caption them.</p>
+    <h2>Video and media</h2>
+    <p class="lede">Short, task-focused screencasts for students and the public. I script, record, edit, caption, and publish each one, with scripts or transcripts alongside.</p>
 
     <article class="record">
       <div class="format">Screencast<span>2026 update</span></div>
@@ -293,8 +359,8 @@
   </section>
 
   <section class="group" id="workshops">
-    <h2>Workshops and presentations</h2>
-    <p class="lede">Live and recorded sessions and programs on AI, data, research tools, and language learning, for students, faculty, and community learners.</p>
+    <h2>Training and workshops</h2>
+    <p class="lede">I teach more than 35 library instruction sessions and 3 to 4 workshops every semester. These are some of the sessions and programs I have designed for students, faculty, and community learners.</p>
 
     <article class="record">
       <div class="format">Workshop<span>Fall 2026</span></div>
@@ -327,10 +393,10 @@
     </article>
 
     <article class="record">
-      <div class="format">Learning program<span>Launched October 2024</span></div>
+      <div class="format">Learning program<span>October 2024 to 2026</span></div>
       <div>
         <h3>English Caf&eacute;</h3>
-        <p>A free, recurring program I created for adult speakers of other languages to practice reading, writing, and conversation in English in a relaxed, welcoming setting. The program met on the first and third Monday of each month at the Alvin Sherman Library, and I created new materials for every session.</p>
+        <p>A free, recurring program I created and facilitated for adult speakers of other languages to practice reading, writing, and conversation in English in a relaxed, welcoming setting. The program met twice a month at the Alvin Sherman Library with 2 to 10 attendees per session, and I created new materials and activities for every session.</p>
         <p>To strengthen the curriculum, I worked with Broward County Library staff on its structure and on recommended resources, a natural fit with my <a href="#certifications">TEFL training</a>.</p>
         <div class="gallery single">
           <figure>
@@ -360,7 +426,7 @@
       <div class="format">Guide and workshop<span>Multi-page guide, live demos</span></div>
       <div>
         <h3>Basic Look at Video Editing</h3>
-        <p>I first built this guide when a faculty member asked for help supporting a video project in her class. It grew into a hands-on workshop I deliver to her students each semester, where I walk through the guide and demonstrate iMovie and Adobe Premiere Rush. I have also given video editing demonstrations for a COMP 1500 class and during a THEA 1500 tour of the Digital Media Lab and Makerspace.</p>
+        <p>I first built this guide when a faculty member asked for help supporting a video project in her class. It grew into a hands-on workshop I deliver to her students each semester, where I walk through the guide and demonstrate iMovie and Adobe Premiere Rush. I have taught it every semester since Fall 2023, and after each session 4 to 5 students book follow-up Adobe Creative Cloud appointments within two weeks. I have also given video editing demonstrations for a COMP 1500 class and during a THEA 1500 tour of the Digital Media Lab and Makerspace.</p>
         <p>The guide itself is a beginner's guide to iMovie and Adobe Premiere Rush, organized by task: creating and exporting projects, working with audio, and using editing tools. It also covers copyright basics, citing media, and where to find free-to-use images, video, and music.</p>
         <ul class="skills"><li>Needs analysis</li><li>Software training</li><li>Live demonstration</li><li>Job aids</li></ul>
         <a class="view" href="https://libguides.nova.edu/videoedit">Open the guide</a>
@@ -465,6 +531,38 @@
         <ul class="skills"><li>Job aid design</li><li>Plain-language writing</li><li>Visual hierarchy</li><li>Print design</li></ul>
       </div>
     </article>
+  </section>
+
+  <section class="group" id="tools">
+    <h2>Tools and skills</h2>
+    <p class="lede">The platforms and tools I use in my work and graduate program.</p>
+    <div class="toolgrid">
+      <div>
+        <h3>Learning platforms and systems</h3>
+        <ul class="skills"><li>Canvas LMS (sub-account admin)</li><li>Canvas Outcomes and rubrics</li><li>Canvas New Analytics</li><li>NSUWorks / bepress Digital Commons</li><li>LibGuides</li><li>LibAnswers and LibChat</li></ul>
+      </div>
+      <div>
+        <h3>Media and design</h3>
+        <ul class="skills"><li>Adobe Photoshop</li><li>Adobe Premiere Pro</li><li>Adobe Audition</li><li>Premiere Rush and iMovie</li><li>Camtasia</li><li>Canva</li><li>PowerPoint (advanced)</li><li>Captions and transcripts</li></ul>
+      </div>
+      <div>
+        <h3>Web and development</h3>
+        <ul class="skills"><li>HTML and CSS</li><li>JavaScript (basic)</li><li>Git and GitHub</li><li>GitHub Pages</li><li>Custom domain and DNS setup (Cloudflare)</li></ul>
+      </div>
+      <div>
+        <h3>Data and analytics</h3>
+        <ul class="skills"><li>SQL</li><li>Python (scikit-learn, Plotly)</li><li>Tableau</li><li>Excel (intermediate)</li><li>Usage statistics reporting</li></ul>
+      </div>
+      <div>
+        <h3>Productivity and collaboration</h3>
+        <ul class="skills"><li>Microsoft 365 (Outlook, Forms, SharePoint)</li><li>Google Workspace and Google Forms</li><li>Trello</li><li>SignUpGenius</li></ul>
+      </div>
+      <div>
+        <h3>AI tools</h3>
+        <ul class="skills"><li>Claude and Claude Code</li><li>Microsoft Copilot</li><li>ChatGPT</li></ul>
+      </div>
+    </div>
+    <p class="figcap">I have also used Claude Code to build and publish two iOS apps on the App Store, Wannae and The Quiet Chapter: A Journey.</p>
   </section>
 
   <section class="group" id="certifications">
